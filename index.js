@@ -9,11 +9,11 @@ app.use(express.json());
 
 // --- 1. API KEYS LOADING ---
 const API_KEYS = [
-    process.env.GROQ_API_KEY_1,
-    process.env.GROQ_API_KEY_2,
-    process.env.GROQ_API_KEY_3,
-    process.env.GROQ_API_KEY_4,
-    process.env.GROQ_API_KEY_5
+    process.env.GROQ_KEY_1,
+    process.env.GROQ_KEY_2,
+    process.env.GROQ_KEY_3,
+    process.env.GROQ_KEY_4,
+    process.env.GROQ_KEY_5
 ].filter(key => key);
 
 app.get('/', (req, res) => {
