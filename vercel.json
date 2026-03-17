@@ -1,18 +1,13 @@
 {
   "version": 2,
-  "functions": {
-    "backend/api/index.js": {
-      "runtime": "vercel-node@latest"
-    }
-  },
-  "routes": [
+  "rewrites": [
     {
       "src": "/api",
-      "dest": "backend/api/index.js"
+      "destination": "/backend/api/index.js"
     },
     {
       "src": "/api/(.*)",
-      "dest": "backend/api/index.js"
+      "destination": "/backend/api/index.js"
     }
   ]
 }
