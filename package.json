@@ -1,5 +1,5 @@
 {
-  "name": "groq-failover-backend",
+  "name": "ai-builder-backend",
   "version": "1.0.0",
   "dependencies": {
     "axios": "^1.6.0"
