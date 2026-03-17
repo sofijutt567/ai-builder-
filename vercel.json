@@ -1,21 +1,7 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "backend/api/index.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api",
-      "dest": "backend/api/index.js",
-      "methods": ["POST", "OPTIONS"]
-    },
-    {
-      "src": "/api/(.*)",
-      "dest": "backend/api/index.js",
-      "methods": ["POST", "OPTIONS"]
-    }
+  "rewrites": [
+    { "source": "/api", "destination": "backend/api/index.js" },
+    { "source": "/api/(.*)", "destination": "backend/api/index.js" }
   ]
 }
